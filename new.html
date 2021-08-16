@@ -1,0 +1,80 @@
+
+  <html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 25px;
+  padding: 10px;
+  border: none;
+  background: #FA8903;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #FA8903;
+  color:#20D9F9  ;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo" width="80%">
+  <source src="E:\infinite gaming\img\aftermath-announce-tile-bg.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Heading</h1>
+  <p>unleash the power of immortality with playing the mortal kombat and complete the story mode when raiden becomes the evil</p>
+  <button id="myBtn" onclick="myFunction()">KNOW MORE</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+	
